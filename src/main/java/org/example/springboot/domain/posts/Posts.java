@@ -41,7 +41,6 @@ public class Posts extends BaseTimeEntity {
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
-
     private String author;
 
 
@@ -54,8 +53,9 @@ public class Posts extends BaseTimeEntity {
         this.author = author;
     }
 
-    public void update(String title, String content){
+    public void update(String title, String author, String content){
         this.title = title;
+        this.author = author;
         this.content = content;
     }
 
