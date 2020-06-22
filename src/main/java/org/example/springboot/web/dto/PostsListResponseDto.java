@@ -3,7 +3,6 @@ package org.example.springboot.web.dto;
 import lombok.Getter;
 import org.example.springboot.domain.posts.Posts;
 
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Getter

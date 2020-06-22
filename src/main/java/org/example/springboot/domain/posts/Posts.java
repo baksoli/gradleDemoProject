@@ -24,7 +24,9 @@ import javax.persistence.*;
     @Column
     - 테이블의 칼럼을 나타내며, 굳이 선언하지 않더라도 해당 클래스의 필드는 모두 칼럼
     - 기본값 외에 추가로 변경이 필요한 옵션이 있을때 사용
-        예) varchar(255)가 기본값, 사이즈를 500으로 늘리고 싶거나 타입을 TEXT로 변경하고 싶은 경우에 사용. 
+        예) varchar(255)가 기본값, 사이즈를 500으로 늘리고 싶거나 타입을 TEXT로 변경하고 싶은 경우에 사용.
+        * @Column(length=500, nullable=false)
+        * @Column(columnDefinition = "TEXT", nullable = false)
  */
 
 @Getter
